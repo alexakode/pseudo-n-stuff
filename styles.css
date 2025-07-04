@@ -1,0 +1,15 @@
+p::first-letter {
+    font-size: 20rem;
+}
+.test {
+    height: 5rem;
+    width: 5rem;
+    background: black;
+}
+.test::after{
+    content: "hello";
+    color: white;
+}
+.test::before{
+    color: #fff
+}
