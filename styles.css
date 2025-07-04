@@ -1,32 +1,49 @@
 p::first-letter {
-    font-size: 20rem;
+  font-size: 20rem;
 }
 .test {
-    height: 5rem;
-    width: 5rem;
-    background: black;
+  height: 5rem;
+  width: 5rem;
+  background: black;
 }
-.test::after{
-    content: "hello";
-    color: white;
+.test::after {
+  content: "hello";
+  color: white;
 }
-.test::before{
-    content: : "bye";
-    color: #fff
+.test::before {
+  content: "bye";
+  color: #fff;
 }
 .test:hover {
-    scale: 1.2;
-    transition: all 1s;
+  scale: 1.2;
+  transition: all 1s;
 }
 .grid > div {
-    height: 5rem;
-    width: 5rem;
-    background: black;
-    margin: 1/2rem;
+  height: 5rem;
+  width: 5rem;
+  background: black;
+  /* margin: 1/2rem; */
 }
-.grid > * + * {
+/* .grid > * + * {
     margin: .5rem;
 }
 .grid > * + * {
 
+} */
+.grid {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 400px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (prefers-color-scheme: dark) {
 }
