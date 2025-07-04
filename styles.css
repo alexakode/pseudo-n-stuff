@@ -11,5 +11,22 @@ p::first-letter {
     color: white;
 }
 .test::before{
+    content: : "bye";
     color: #fff
+}
+.test:hover {
+    scale: 1.2;
+    transition: all 1s;
+}
+.grid > div {
+    height: 5rem;
+    width: 5rem;
+    background: black;
+    margin: 1/2rem;
+}
+.grid > * + * {
+    margin: .5rem;
+}
+.grid > * + * {
+
 }
